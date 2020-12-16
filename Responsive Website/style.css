@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* Global reset */
+*{
+    box-sizing: border-box;
+    font-family: inherit;
+    color: inherit;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color:#444;
+    margin:0;
+    padding:0;
+}
+
+p{
+    max-width: 600;
+}
+
+header{
+    display:flex;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+}
+
+/* Start of header section styling */
+.container{
+    max-width: 1200px;
+    padding:24px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.navigation{
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+.navigation-item{
+    text-decoration: none;
+    color:#bdbdbd;
+    margin-left:24px;
+}
+
+.navigation-item:first-child{
+    margin-left: 0;
+}
+
+.navigation-item.active{
+    color:#333;
+}
+
+.nav-btn{
+    background: linear-gradient(270deg, #FAA245 0%, #D8328A 37.25%, #753872 100%);
+    color:#fff;
+    border:none;
+    padding:10px 36px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+/* End of header section styling */
+
+/* Start of main section styling */
+h1{
+    font-size: 52px;
+    font-weight: 500;
+    margin:0;
+    padding:0;
+}
+
+p{
+    color:#828282;
+    margin:0;
+    padding: 0;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+.main-content{
+    flex:1;
+}
+
+.main-content-btn{
+    display: flex;
+    align-items: center;
+    border:1px solid #e0e0e0;
+    padding: 10px 36px;
+    border-radius: 40px;
+    background: transparent;
+    background: -webkit-linear-gradient(180deg, #faa245 0%, #d8328a 37.25%, #753872 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.main-content-btn .fa{
+    background: inherit;
+    font-size: 1.25rem;
+    margin-right: 6px;
+}
+
+.main-image{
+    flex:1;
+}
+
+/* End of main section styling */
+
+/* Start of Footer section styling */
+footer{
+    display: flex;
+}
+
+.footer-nav{
+    margin-right: 40px;
+    color: #bdbdbd;
+}
+
+.social-icon{
+    margin-right: 12px;
+}
+
+.social-icon:hover{
+    color:#333;
+}
